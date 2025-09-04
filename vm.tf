@@ -2,7 +2,8 @@ resource "azurerm_public_ip" "public_ip" {
   name                = "public_ip_vm_terraform"
   resource_group_name = azurerm_resource_group.rg.name
   location            = var.azure_region
-  allocation_method   = "Static"
+  allocation_method   = "Dynamic"
+  sku                 = "Basic"
 
   tags = local.common_tags
 }
