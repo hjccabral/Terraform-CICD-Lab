@@ -30,12 +30,12 @@ resource "azurerm_network_interface_security_group_association" "nsga" {
 
 
 resource "azurerm_linux_virtual_machine" "vm" {
-  name                = "vm-ubuntu"
-  resource_group_name = azurerm_resource_group.rg.name
-  location            = var.azure_region
-  size                = "Standard_B1s"
-  admin_username      = "admtf"
-  network_interface_ids = [ azurerm_network_interface.nic.id, ]
+  name                  = "vm-ubuntu"
+  resource_group_name   = azurerm_resource_group.rg.name
+  location              = var.azure_region
+  size                  = "Standard_B1s"
+  admin_username        = "admtf"
+  network_interface_ids = [azurerm_network_interface.nic.id, ]
 
   admin_ssh_key {
     username   = "admtf"
