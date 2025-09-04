@@ -24,12 +24,6 @@ resource "azurerm_network_interface" "nic" {
 
 }
 
-//resource "azurerm_network_interface_security_group_association" "nsga" {
-//  network_interface_id      = azurerm_network_interface.nic.id
-//  network_security_group_id = data.terraform_remote_state.network.outputs.network_security_group_id
-//}
-
-
 resource "azurerm_linux_virtual_machine" "vm" {
   name                  = "vm-ubuntu"
   resource_group_name   = azurerm_resource_group.rg.name
