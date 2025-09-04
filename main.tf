@@ -40,9 +40,9 @@ provider "azurerm" {
 data "terraform_remote_state" "vpc" {
   backend = "s3"
   config = {
-    bucket  = "hilton-tf-state"
-    key     = "terraform/2-aws-remote-state/terraform.tfstate"
-    region  = var.aws_region
+    bucket = "hilton-tf-state"
+    key    = "terraform/2-aws-remote-state/terraform.tfstate"
+    region = var.aws_region
   }
 }
 
