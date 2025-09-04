@@ -13,8 +13,8 @@ jobs:
       ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
       ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
       ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
-      TF_VAR_AWS_PUB_KEY: ${{ secrets.AWS_PUB_KEY }}
-      TF_VAR_AZURE_PUB_KEY: ${{ secrets.AZURE_PUB_KEY }}
+      TF_VAR_aws_pub_key: ${{ secrets.AWS_PUB_KEY }}
+      TF_VAR_azure_pub_key: ${{ secrets.AZURE_PUB_KEY }}
     steps:
       - uses: actions/checkout@v4
       - uses: hashicorp/setup-terraform@v3
@@ -34,8 +34,8 @@ jobs:
       ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
       ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
       ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
-      TF_VAR_AWS_PUB_KEY: ${{ secrets.AWS_PUB_KEY }}
-      TF_VAR_AZURE_PUB_KEY: ${{ secrets.AZURE_PUB_KEY }}
+      TF_VAR_aws_pub_key: ${{ secrets.AWS_PUB_KEY }}
+      TF_VAR_azure_pub_key: ${{ secrets.AZURE_PUB_KEY }}
     steps:
       - uses: actions/checkout@v4 
       - uses: hashicorp/setup-terraform@v3 
@@ -59,8 +59,8 @@ jobs:
       ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
       ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
       ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
-      TF_VAR_AWS_PUB_KEY: ${{ secrets.AWS_PUB_KEY }}
-      TF_VAR_AZURE_PUB_KEY: ${{ secrets.AZURE_PUB_KEY }}
+      TF_VAR_aws_pub_key: ${{ secrets.AWS_PUB_KEY }}
+      TF_VAR_azure_pub_key: ${{ secrets.AZURE_PUB_KEY }}
     environment:
       name: production
     steps:
@@ -86,8 +86,8 @@ jobs:
       ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
       ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
       ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
-      TF_VAR_AWS_PUB_KEY: ${{ secrets.AWS_PUB_KEY }}
-      TF_VAR_AZURE_PUB_KEY: ${{ secrets.AZURE_PUB_KEY }}
+      TF_VAR_aws_pub_key: ${{ secrets.AWS_PUB_KEY }}
+      TF_VAR_azure_pub_key: ${{ secrets.AZURE_PUB_KEY }}
     steps:
       - uses: actions/checkout@v4
       - uses: hashicorp/setup-terraform@v3
