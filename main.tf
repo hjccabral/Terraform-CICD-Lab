@@ -43,7 +43,6 @@ data "terraform_remote_state" "vpc" {
     bucket  = "hilton-tf-state"
     key     = "terraform/2-aws-remote-state/terraform.tfstate"
     region  = var.aws_region
-    profile = var.aws_profile
   }
 }
 
