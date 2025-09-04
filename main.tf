@@ -14,15 +14,15 @@ terraform {
   }
 
   backend "s3" {
-    bucket  = "hilton-tf-state"
-    key     = "terraform/session-11/aws-azure-vm/terraform.tfstate"
-    region  = "us-east-1"
+    bucket = "hilton-tf-state"
+    key    = "terraform/session-11/aws-azure-vm/terraform.tfstate"
+    region = "us-east-1"
   }
 
 }
 
 provider "aws" {
-  region  = var.aws_region
+  region = var.aws_region
   default_tags {
     tags = {
       Owner       = "Hilton"
